@@ -264,8 +264,8 @@ namespace osmscout {
      * @note
      *    The difference in height between the two points is neglected.
      */
-    double GetDistance(GeoCoord target);
-    inline double operator-(GeoCoord other)
+    double GetDistance(const GeoCoord target) const;
+    inline double operator-(const GeoCoord other) const
     {
         return GetDistance(other);
     }

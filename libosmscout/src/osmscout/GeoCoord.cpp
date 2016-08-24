@@ -321,7 +321,7 @@ namespace osmscout {
     }
   }
 
-  double GeoCoord::GetDistance(GeoCoord target)
+  double GeoCoord::GetDistance(const GeoCoord target) const
   {
       return GetEllipsoidalDistance(GetLon(), GetLat(), target.GetLon(), target.GetLat());
   }
